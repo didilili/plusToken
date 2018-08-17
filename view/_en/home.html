@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Assets</title>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/css/home.css"/>
+	<style type="text/css">
+		/*点击*/
+		.mui-table-view-cell>a:not(.mui-btn).mui-active{
+			background-color:transparent;
+		}
+	</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 id="title" class="mui-title">Assets</h1>
+	</header>
+	
+	<div class="mui-content">
+		    <div class="person_center">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell my-header" id="1">
+						<a  style="margin: 7% 0;">
+							<img src="../../images/icons/logo.png">
+							<span class="person_name">13415408184<c class="vip_grade"></c></span>
+							<p class="person_phone">Total assets  （$）≈ <span id="assets">1.14</span></p>
+						</a>
+						<div class="qc-p">
+							<img class="qc-img" src="../../images/icons/qc.svg" alt="" style="float: right;	width: 25px;height: 25px;border-radius: 0px;border: 0;" />
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="about_ours">
+				<ul class="mui-table-view" id="gold_list">
+				</ul>
+			</div>
+	</div>
+	
+	<script src="../../js/mui.js"></script>
+	<script src="../../js/util/back.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/script/_en/home.js"></script>
+	<script type="text/javascript" charset="utf-8">
+      	mui.init({
+			pullRefresh : {
+		    container:".about_ours",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+		    down : {
+		      style:'circle',//必选，下拉刷新样式，目前支持原生5+ ‘circle’ 样式
+		      color:'#2BD009', //可选，默认“#2BD009” 下拉刷新控件颜色
+		      height:'200px',//可选,默认50px.下拉刷新控件的高度,
+		      range:'200px', //可选 默认100px,控件可下拉拖拽的范围 
+		      offset:'210px', //可选 默认0px,下拉刷新控件的起始位置
+		      auto: true,//可选,默认false.首次加载自动上拉刷新一次
+		      callback :pulldown //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+		    },
+//		    //上拉加载
+		    container:".about_ours",
+		    up : {
+			    height:300,//可选.默认50.触发上拉加载拖动距离
+			    auto:false,//可选,默认false.自动上拉加载一次
+			    contentrefresh : "loading...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+			    contentnomore:'No more data',//可选，请求完毕若没有更多数据时显示的提醒内容；
+			    callback : pullup
+			}
+		  }
+		});
+    </script>
+</body>
+</html>

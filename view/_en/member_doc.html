@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Membership agreement</title>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../css/common.css" rel="stylesheet"/>
+	<link href="../../css/css/member_doc.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">Membership agreement</h1>
+	</header>
+	di
+	<div class="mui-content" style="background-color: #FFFFFF;">
+		<div class="login_photo">
+			<img src="../../images/logo.png">
+		</div>
+		<div style="margin: 5% 0"></div>
+		<div>
+			<textarea readonly="readonly" name="doc" id="doc" class="textarea">Real-time analytics
+Push data to clients that gets represented as real-time counters, charts or logs.
+
+Binary streaming
+Starting in 1.0, it's possible to send any blob back and forth: image, audio, video.
+
+Instant messaging and chat
+Socket.IO's "Hello world" is a chat app in just a few lines of code.
+
+Document collaboration
+Allow users to concurrently edit a document and see each other's changes.
+
+USED BY EVERYONE
+From Microsoft Office, Yammer, Zendesk, Trello... to hackathon winners and little startups.
+
+One of the most powerful JavaScript frameworks on GitHub, and most depended-upon npm module.
+			</textarea>
+			
+			<div class="mui-input-row mui-checkbox mui-left" style="margin: 20px 0;">
+			  <label>I have read the plusToken user agreement and agreed</label>
+			  <input name="doc_checkbox" id="doc_checkbox" onclick="this.value= this.value==1 ? 0:1" value="0" type="checkbox">
+			</div>
+			<div >
+				<button id="next" type="button" class="mui-btn mui-btn-block mui-btn-primary">Next</button>
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript" charset="utf-8" src="../../js/mui.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../js/script/_en/member_doc.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</body>
+</html>

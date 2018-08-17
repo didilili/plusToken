@@ -1,0 +1,105 @@
+body{
+	font-size: 15px;
+	color: #979797;
+	font-family: "微软雅黑";
+	background-color: #fff;
+}
+/*.mui-table-view-cell {
+    position: relative;
+    overflow: hidden;
+    padding: 15px 15px;
+    -webkit-touch-callout: none;
+}*/
+.mui-btn-primary,
+.mui-btn-blue-a {
+	color: #fff;
+	border: 1px solid #3b579d;
+	background-color: #3b579d;
+	margin-left: 5%;
+	width: 90%;
+	height: 44px;
+	padding: 0px 0;
+}
+
+.two {
+	margin-left: 5%;
+	width: 90%;
+	height: 44px;
+	padding: 0px 0;
+	border: solid 1px #3b579d; 
+	background-color: #fff;
+	color: #3b579d;
+}
+.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before {
+    color: #3b579d;
+}
+
+.mui-input-row .mui-input-clear~.mui-icon-clear.mui-active, .mui-input-row .mui-input-password~.mui-icon-eye.mui-active, .mui-input-row .mui-input-speech~.mui-icon-speech.mui-active {
+    color: #3b579d;
+}
+
+.mui-btn-blue, .mui-btn-primary, input[type=submit] {
+    color: #fff;
+    border: 1px solid #3b579d;
+    background-color: #3b579d;
+}
+
+.mui-bar-tab .mui-tab-item.mui-active {
+    color: #3b579d;
+}
+
+.mui-switch.mui-active {
+    border-color: #3b579d;
+    background-color: #3b579d;
+}
+
+a {
+    text-decoration: none;
+     color: #3b579d; 
+}
+
+.eth{
+	background-image: url(../images/icons/ETH.svg);
+	background-repeat: no-repeat;
+	width: 26px;
+	height: 26px;
+}
+
+/*顶部标题栏*/
+/*.mui-bar-nav {
+    top: 0;
+    -webkit-box-shadow: 0 1px 6px #ccc;
+    box-shadow: 0 0px 0px;
+    background-color: #3b579d;
+}
+
+.mui-bar .mui-title {
+    right: 40px;
+    left: 40px;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    margin: 0;
+    text-overflow: ellipsis;
+    color: #FFFFFF;
+}
+
+header a{
+	text-decoration: none;
+    color: #FFFFFF;
+}*/
+
+.content{
+	width:100%;
+	background-color: #FFFFFF;
+    padding: 15px;
+    word-wrap:break-word; 
+    word-break:break-all;
+}
+
+
+.jiange{
+	height: 5px; 
+	width: 100%;
+	background: #efeff4;
+}

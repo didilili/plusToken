@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/css/me/key.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">私钥</h1>
+		</header>
+		
+		<div class="mui-content">
+		    <div class="my-title">
+		    	<span><i class=""></i>私钥</span>
+		    </div>
+		    
+		    <div class="my-text">
+		    	<textarea id="key" readonly="readonly" name="" rows="" cols=""></textarea>
+		    </div>
+		    
+		    <div class="login_but">
+				<button id="copy" type="button" class="mui-btn mui-btn-block mui-btn-primary">复制私钥</button>             	
+				<button id="save" type="button" class="mui-btn mui-btn-block two">保存到相册</button>
+            </div>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){
+			    var self = plus.webview.currentWebview();
+				var key = self.key;
+				var flag = self.flag;
+				
+				var old_back = mui.back;
+				mui.back = function(){
+					switch (flag){
+						case 'login':
+							var webview = plus.webview.create('../index.html','login');
+				    		webview.show();
+							break;
+						default:
+							old_back();
+							break;
+					}	
+				};
+		
+				var node_key = document.createTextNode(key);
+				
+				document.getElementById("key").appendChild(node_key);
+			
+				document.getElementById("copy").addEventListener('tap',function(){
+					document.getElementById("key").select();
+					document.execCommand('Copy');
+					mui.toast('已复制');
+				});
+				
+				//保存到本地相册
+				document.getElementById("save").addEventListener('tap',function(){
+					var self = plus.webview.currentWebview();
+					var bitmap = new plus.nativeObj.Bitmap('test');
+					
+					//绘制截图
+					self.draw(bitmap,function(){
+						console.log(JSON.stringify(bitmap));
+						
+						// 保存Bitmap图片
+				         bitmap.save("_doc/key_"+Date.parse( new Date())+".png", {
+			                overwrite: true,
+			                format:'png',
+			                quality:'100',
+			           }, function(i) {
+			        		//保存到系统相册
+			        		plus.gallery.save(i.target,function(d){
+			        			//销毁Bitmap图片
+			        			bitmap.clear();
+			        			
+			        			mui.toast('图片已保存至系统相册');
+			        		}, function(e){
+			        			//销毁Bitmap图片
+			        			bitmap.clear();
+			        			
+			        			mui.toast('保存图片失败');
+			        		});
+			        		
+			            }, function(e) {
+			            	bitmap.clear();
+			            	
+			                console.log('保存图片失败：' + JSON.stringify(e));
+			            });
+					
+					},function(){
+						mui.toast('截屏失败，请重试')
+					});
+				})
+			})
+		</script>
+	</body>
+
+</html>

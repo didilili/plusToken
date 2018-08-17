@@ -1,0 +1,42 @@
+.my-list{
+	
+}
+
+.my-name{
+    float: left;
+    -webkit-transform: translateY(17%);
+    /*transform: translateY(-50%);*/
+}
+
+.my-img{
+	width: 26px;
+	height: auto;
+    float: left;
+    margin-right: 10px;
+    -webkit-transform: translateY(1%);
+    /*transform: translateY(-50%);*/
+   text-align: center;
+}
+
+.my-number{
+    position: absolute;
+    top: 50%;
+    left: 33.333%;
+    right: 33.333%;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    text-align: center;
+}
+
+.my-time{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    width: 30%;
+    text-overflow:ellipsis;overflow:hidden;
+    text-align: center;
+}
+
+

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>exchange</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<link rel="stylesheet" href="../../../css/css/login.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/css/exchange.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">兑换</h1>
+		</header>
+		
+		<div class="mui-content">
+			    <div class="my-head">
+			    	<div class="source">
+			    		<div class="name">
+			    			<span id="source_name"></span>
+			    		</div>
+			    		<div class="number">
+			    			<span id="source"></span>
+			    		</div>
+			    	</div>
+			    	<div class="aims">
+			    		<div class="name">
+			    			<span id="aims_name"></span>
+			    		</div>
+			    		<div class="number">
+			    			<span id="aims">0</span>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="fell">
+			    	<div class="source-fell">
+			    		<span class="my-one" id="fell"></span>
+			    		<span class="my-two">最大兑换数量<span id="aims_num"></span></span>
+			    	</div>
+			    	<div class="aims-fell">
+			    		<span class="my-one"><span id="aims_name2"></span>($)<span>445.4800</span></span>
+			    		<span class="my-two"><span id="source_name2"></span>($)<span>5.06</span></span>
+			    	</div>
+			    </div>
+			    
+			    <div class="my-form">
+			    	<div class="mui-content mui-input-group">
+		               <form id="form">		                    
+		                    <div class="mui-input-row">
+								<label><span>兑换数量：</span></label>
+		                         <input id="address" name="address" type="text" 
+		                         	class="mui-input-clear input" placeholder="请在此输入">
+							</div>
+							
+							<div class="mui-input-row">
+								<label><span>可兑换数：</span></label>
+		                         <input id="number" name="number" type="text" 
+		                         	readonly="readonly" class="input" value="0">
+							</div>
+							<div class="mui-input-row">
+								<label><span>交易密码：</span></label>
+		                         <input id="password" name="password" type="password" 
+		                         	class="mui-input mui-input-password input" placeholder="">
+							</div>
+							<p style="margin: 20px 15px;"></p>
+		                    
+						</form>
+					</div>
+					<div class="login_but">
+						<button id="submit" class="mui-btn mui-btn-block mui-btn-primary" 
+							type="button">兑换</button>             	
+	                </div>
+			    </div>
+		</div>
+		
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/script/_cn/exchange.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

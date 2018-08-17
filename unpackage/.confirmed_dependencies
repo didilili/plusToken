@@ -1,0 +1,268 @@
+{
+	"view/_cn/login.html": {
+		"refer": [
+			"view/_cn/login.html",
+			"view/_cn/reg.html",
+			"view/_cn/index.html",
+			"view/_cn/forget.html",
+			"view/_cn/member_doc.html",
+			"view/_en/login.html",
+			"view/_cn/home.html",
+			"view/_cn/news.html",
+			"view/_cn/quotes.html",
+			"view/_cn/me.html"
+		],
+		"resources": []
+	},
+	"view/_cn/reg.html": {
+		"refer": [
+			"view/_cn/reg.html",
+			"view/_cn/set_pwd.html"
+		],
+		"resources": []
+	},
+	"view/_cn/forget.html": {
+		"refer": [
+			"view/_cn/forget.html",
+			"view/_cn/login.html"
+		],
+		"resources": []
+	},
+	"view/_cn/member_doc.html": {
+		"refer": [
+			"view/_cn/reg.html"
+		],
+		"resources": []
+	},
+	"view/_cn/set_pwd.html": {
+		"refer": [
+			"view/_cn/set_pwd.html",
+			"view/_cn/index.html",
+			"view/_cn/me/key.html"
+		],
+		"resources": []
+	},
+	"view/welcome.html": {
+		"refer": [
+			"view/_cn/index.html",
+			"view/_cn/login.html",
+			"view/_en/index.html",
+			"view/_en/login.html"
+		],
+		"resources": []
+	},
+	"view/_en/login.html": {
+		"refer": [
+			"view/_cn/login.html",
+			"view/_en/forget.html",
+			"view/_en/member_doc.html",
+			"view/_en/index.html",
+			"view/_en/news.html",
+			"view/_en/quotes.html",
+			"view/_en/me.html",
+			"view/_en/home.html"
+		]
+	},
+	"view/_cn/index.html": {
+		"resources": [
+			"view/_cn/login.html",
+			"view/_cn/home.html",
+			"view/_cn/me.html",
+			"view/_cn/quotes.html"
+		],
+		"refer": [
+			"view/_cn/login.html",
+			"view/_cn/reg.html",
+			"view/_cn/home.html",
+			"view/_cn/me.html",
+			"view/_cn/news.html",
+			"view/_cn/quotes.html",
+			"view/_en/home.html",
+			"view/_en/me.html"
+		]
+	},
+	"view/_cn/me.html": {
+		"refer": [
+			"view/_cn/login.html",
+			"view/_cn/me/safety.html",
+			"view/_cn/me/ai_dog.html",
+			"view/_cn/me/sq_vip.html",
+			"view/_cn/me/candy.html",
+			"view/_cn/me/announcement.html",
+			"view/_cn/me/address.html",
+			"view/_cn/me/settings.html",
+			"view/_cn/me/help.html",
+			"view/_cn/me/history.html",
+			"view/_cn/me/friends.html",
+			"view/_cn/me/income.html",
+			"view/_cn/me/contact.html",
+			"view/_cn/me/about.html"
+		]
+	},
+	"view/_cn/quotes.html": {
+		"resources": [
+			"view/_cn/home.html"
+		],
+		"refer": [
+			"view/_cn/home.html",
+			"view/_cn/news.html",
+			"view/_cn/me.html",
+			"view/_cn/gold.html"
+		]
+	},
+	"view/_en/member_doc.html": {
+		"refer": [
+			"view/_en/reg.html"
+		]
+	},
+	"view/_en/reg.html": {
+		"refer": [
+			"view/_en/set_pwd.html"
+		]
+	},
+	"view/_en/index.html": {
+		"resources": [
+			"view/_en/me.html",
+			"view/_en/home.html"
+		],
+		"refer": [
+			"view/_en/news.html",
+			"view/_en/quotes.html",
+			"view/_en/me.html",
+			"view/_en/home.html",
+			"view/_cn/me.html"
+		]
+	},
+	"view/_en/me.html": {
+		"refer": [
+			"view/_en/login.html",
+			"view/_en/me/ai_dog.html",
+			"view/_en/me/safety.html",
+			"view/_en/me/sq_vip.html",
+			"view/_en/me/candy.html",
+			"view/_en/me/announcement.html",
+			"view/_en/me/address.html",
+			"view/_en/me/settings.html",
+			"view/_en/me/about.html",
+			"view/_en/me/contact.html",
+			"view/_en/me/history.html",
+			"view/_en/me/friends.html",
+			"view/_en/me/income.html"
+		]
+	},
+	"view/_cn/home.html": {
+		"refer": [
+			"view/_cn/news.html",
+			"view/_cn/quotes.html",
+			"view/_cn/me.html",
+			"view/_cn/qr_code.html",
+			"view/_cn/transaction.html"
+		]
+	},
+	"view/_cn/me/announcement.html": {
+		"refer": [
+			"view/_cn/me/info.html"
+		]
+	},
+	"view/_en/me/announcement.html": {
+		"refer": [
+			"view/_en/me/info.html"
+		]
+	},
+	"view/_cn/me/address.html": {
+		"refer": [
+			"view/_cn/me/add.html"
+		]
+	},
+	"view/_en/me/address.html": {
+		"refer": [
+			"view/_en/me/add.html"
+		]
+	},
+	"view/_cn/me/settings.html": {
+		"refer": [
+			"view/_en/me/settings.html",
+			"view/_cn/index.html",
+			"view/_cn/me/key.html",
+			"view/_cn/me/change_pwd.html"
+		]
+	},
+	"view/_en/me/settings.html": {
+		"refer": [
+			"view/_cn/me/settings.html",
+			"view/_en/index.html",
+			"view/_en/me/key.html",
+			"view/_en/me/change_pwd.html"
+		]
+	},
+	"view/_cn/me/friends.html": {
+		"refer": [
+			"view/_cn/me/friends_ai_dog.html"
+		]
+	},
+	"view/_cn/me/income.html": {
+		"refer": [
+			"view/_cn/me/list_com.html"
+		]
+	},
+	"view/_en/me/income.html": {
+		"refer": [
+			"view/_en/me/list_com.html"
+		]
+	},
+	"view/_en/home.html": {
+		"refer": [
+			"view/_en/qr_code.html",
+			"view/_en/transaction.html"
+		]
+	},
+	"view/_cn/transaction.html": {
+		"refer": [
+			"view/_cn/qr_code.html",
+			"view/_cn/out.html",
+			"view/_cn/exchange.html"
+		]
+	},
+	"view/_en/transaction.html": {
+		"refer": [
+			"view/_en/qr_code.html",
+			"view/_en/exchange.html",
+			"view/_en/out.html"
+		]
+	},
+	"view/_cn/out.html": {
+		"refer": [
+			"view/_cn/out.html"
+		]
+	},
+	"view/_en/set_pwd.html": {
+		"refer": [
+			"view/_en/me/key.html"
+		]
+	},
+	"view/_en/me/key.html": {
+		"refer": [
+			"view/_en/index.html"
+		]
+	},
+	"view/_cn/me/key.html": {
+		"refer": [
+			"view/_cn/index.html"
+		]
+	},
+	"view/_cn/me/ai_dog.html": {
+		"refer": [
+			"view/_cn/me/list_com.html"
+		]
+	},
+	"view/_en/me/ai_dog.html": {
+		"refer": [
+			"view/_en/me/list_com.html"
+		]
+	},
+	"view/_en/quotes.html": {
+		"refer": [
+			"view/_en/gold.html"
+		]
+	}
+}

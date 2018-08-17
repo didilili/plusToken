@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../../css/common.css"/>
+		<link rel="stylesheet" href="../../../css/css/login.css" />
+	    <link rel="stylesheet" href="../../../css/iconfont.css" />
+	    <link rel="stylesheet" type="text/css" href="../../../js/plugin/picker/css/mui.picker.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../../css/css/me/change_pwd.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">修改密码</h1>
+		</header>
+		
+		<div class="mui-content"  style="padding-top: 25px;">
+		    <div class="mui-input-group">
+                <form id="login-form">
+					<div style="margin: 5% 0"></div>
+					<div class="mui-input-row" >
+						<label><span class="mui-icon mui-icon-bars"></span></label>
+							<input class="mui-input-clear mui-input input" 
+								id="pwd_type" name="pwd_type" type="button" data-value="" value="请选择密码类型" style="color: #757575; text-align: left;">
+					</div>
+				
+					<div class="mui-input-row">
+						<label><span class="mui-icon iconfont icon-miyue" ></span></label>
+                         <input id="key" name="key" type="password" 
+                         	class="mui-input mui-input-password input" placeholder="请输入您的私钥">
+					</div>
+					
+					<div class="mui-input-row">
+						<label><span class="mui-icon mui-icon-locked" ></span></label>
+                         <input id="pwd" name="pwd" type="password" 
+                         	class="mui-input mui-input-password input" placeholder="请输入新密码">
+					</div>
+					
+					<div class="mui-input-row">
+						<label><span class="mui-icon mui-icon-locked" ></span></label>
+                         <input id="pwd2" name="pwd2" type="password" 
+                         	class="mui-input mui-input-password input" placeholder="确认密码">
+					</div>
+					<p style="margin: 20px 15px;">
+						请输入私钥修改密码，忘记私钥将无法修改，请牢记您的私钥，并将其记在安全的地方。
+					</p>
+                    <div class="login_but">
+						<button id="queding" class="mui-btn mui-btn-block mui-btn-primary" type="button">确定</button>             	
+                    </div>
+                  
+				</form>
+			</div>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/plugin/picker/js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/script/_cn/me/change_pwd.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../js/plugin/picker/css/mui.picker.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/css/me/history.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/css/me/candy.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../css/css/quetes.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">兑换记录</h1>
+		</header>
+		
+		<div class="mui-content">
+		    <div class="my-head">
+		    		<input class="my-button" type="button" name="source" id="source" data-value="" value="点击选择" />
+		    		<button class="text">兑</button>
+		    		<input class="my-button" type="button" name="aims" id="aims" data-value="" value="" />
+		    		<button id="sou" class="shousuo">搜索</button>
+		    </div>
+		    
+		    <div class="my-list">
+		    	<div id="null_list" class="null">
+		    		<span>没有记录</span>
+		    	</div>
+		    	<div id="list"  style="display: none;">
+			    	<table class="my-table my-title">
+						<tr class="my-tr">
+							<td class="my-td">名称</td>
+							<td class="my-td">金额</td>
+							<td class="my-td">时间</td>
+						</tr>
+					</table>
+					
+			    	 <ul class="mui-table-view">
+			    		<li class="mui-table-view-cell">
+			    			<span id="name" class="my-name" style="-webkit-transform: translateY(3%);"></span>
+			    			<span class="my-number">0.01个</span>
+			    			<span class="my-time">2018-07-19 11:10</span>
+			    		</li>
+			    	</ul>
+		   		</div>
+		    </div>
+		    
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/plugin/picker/js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../js/script/_cn/me/history.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

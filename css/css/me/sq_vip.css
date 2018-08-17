@@ -1,0 +1,54 @@
+.my-header{
+	width: 100%;
+	height: auto;
+	background: url(../../../images/start.jpg);
+	background-size: cover;
+}
+
+.my-money{
+	text-align: center;
+	color: #FFFFFF;
+	height: 50px;
+}
+
+.my-money span{
+	font-weight: 600;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.my-desc{
+	padding: 10px 15px 15px;
+    color: #e4e270;
+	
+}
+
+.my-sq{
+	width: 100%;
+	height: 60px;
+}
+
+.my-sq button{
+	width: 80%;
+    margin: 0 10%;
+	color: #3b579d; 
+	background-color: #FFFFFF;
+	border: 0;
+}
+
+
+.my-list{
+	background-color: #FFFFFF;
+}
+
+.my-title{
+	color: #222222;
+	padding: 15px 15px;
+}
+
+.mui-badge-primary{
+	border:  0;
+	background: #FFFFFF;
+	color: #979797;
+}

@@ -1,0 +1,49 @@
+.zsy{
+	color: #32d632;
+}
+
+.zsy1{
+    font-size: 16px;	
+	color: #32d632;
+}
+
+.mui-table-view-cell .person_name {
+    color: #FFFFFF;
+    position: absolute;
+    top: 10%;
+    left: 33%;
+}
+
+.mui-table-view-cell .vip_grade {
+    font-size: 17px;
+    color: red;
+    margin-left: 10%;
+}
+.mui-table-view-cell .person_phone {
+    font-size: 14px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 33%;
+    top: 40%;
+}
+
+.person_phone2 {
+    font-size: 14px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 33%;
+    top: 58%;
+}
+
+.person_phone3 {
+    font-size: 12px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 33%;
+    top: 76%;
+}
+
+/*点击*/
+.mui-table-view-cell>a:not(.mui-btn).mui-active{
+	background-color:transparent;
+}

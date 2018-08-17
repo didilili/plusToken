@@ -1,0 +1,24 @@
+.m-fize{font-size:14px!important}
+.mt3{margin-top:3em;}
+.mt2{margin-top:2em;}
+
+.mui-stock-group{padding:0.5em;background:#fff;}
+table{width:100%;}
+table tr td{font-size:0.9em;line-height:1.5em;}
+table tr:last-child td{padding-bottom:0.5em;}
+table tr:first-child td{padding-top:0.5em;}
+.mui-btn-xs{font-size:0.7em;padding:0px 3px;margin-top:0.5em;}
+.font-buy{color:#3dc18e}
+.font-sell{color:#de211d}
+#buy_panel .form-input{position:relative;padding-top:0.2em}
+#buy_panel .form-input input{height:3em;text-align:right;font-size:13px;font-weight:500;border-radius:0px;border-color:#ddd;font-size:0.9em;}
+#buy_panel .form-input span{color:#888;position:absolute;left:0.9em;top:0.9em;font-size:12px;font-size:0.9em;}
+#sell_panel .form-input{position:relative;padding-top:0.2em}
+#sell_panel .form-input input{height:3em;text-align:right;font-size:13px;font-weight:500;border-radius:0px;border-color:#ddd;font-size:0.9em;}
+#sell_panel .form-input span{color:#888;position:absolute;left:0.9em;top:0.9em;font-size:12px;font-size:0.9em;}
+.form-select{padding-top:10px;padding-bottom:10px;}
+.slider-container .back-bar .pointer-label{display:none;}
+.slider-container .scale span ins{color:#c9cee6;}
+#buy_panel .panel-body,#sell_panel .panel-body{padding-top:0px;}
+.stock-mode a{height:30px;line-height:15px;border-bottom:0px none !important;font-weight:400 !important;}
+.stock-mode .active{color: #82a0bc !important;font-weight: bold !important;}

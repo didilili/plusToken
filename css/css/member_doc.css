@@ -1,0 +1,25 @@
+
+.login_photo{
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 15px;
+	
+}
+
+.login_photo img{
+	background-color: #fff;
+	width: 90px;
+	height: 90px;
+}
+.textarea{
+	width: 90%;
+	height: 300px;
+	margin: 0 5%;
+	background: #F0F0F0;
+	border-radius: 15px;
+	padding: 15px;
+}
+
+

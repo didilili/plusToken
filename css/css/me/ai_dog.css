@@ -1,0 +1,10 @@
+.mui-table-view-cell img{
+	width: 26px;
+	position: relative; 
+    top: 2px; 
+}
+
+.mui-table-view-cell span{
+	position: relative; 
+    top: -4px; 
+}

@@ -1,0 +1,16 @@
+.my-title{
+	color: #222222;
+	text-align: center;
+	margin: 25px;
+	
+}
+
+.my-text{
+	margin: 15px;
+	padding: 5px;
+}
+
+.mui-content {
+    background-color: #FFFFFF;
+    -webkit-overflow-scrolling: touch;
+}

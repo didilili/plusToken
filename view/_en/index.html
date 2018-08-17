@@ -1,0 +1,83 @@
+<!DOCTYPE <html></html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Home</title>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+</head>
+<body>
+	<nav  id="bar" class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item mui-active" href="hemo.html" data-id="main">
+            <span class="mui-icon iconfont icon-shuju"></span>
+            <span class="mui-tab-label">Assets</span>
+        </a>
+        <a class="mui-tab-item" href="quotes.html" data-id="quotes">
+            <span class="mui-icon iconfont icon-shangsheng"></span>
+            <span class="mui-tab-label">Quotes</span>
+        </a>
+        <a class="mui-tab-item"  href="news.html" data-id="news">
+            <span class="mui-icon iconfont icon-faxian"></span>
+            <span class="mui-tab-label">Discover</span>
+        </a>
+        <a class="mui-tab-item"  href="me.html" data-id = "me">
+            <span class="mui-icon mui-icon-contact"></span>
+            <span class="mui-tab-label">Me</span>
+        </a>
+   </nav>
+	<script src="../../js/mui.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/util/back.js"></script>
+	<script src="../../js/script/_en/index.js"></script>
+	<script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	
+      	
+      	mui.plusReady(function(){
+      		 var self = plus.webview.currentWebview();
+                var current = '';
+                var styles = {
+                    top: '0',
+                    bottom: '51px'
+                };
+                var tabsConfig = {
+                    main: {
+                        url: 'home.html',
+                        styles: styles,
+                        default: true
+                    },
+                    quotes: {
+                        url: 'quotes.html',
+                        styles: styles
+                    },
+                    news: {
+                        url: 'news.html',
+                        styles: styles
+                    },
+                    me: { 
+                        url: 'me.html',
+                        styles: styles
+                    }
+                };
+                var tabs = {};
+                for (id in tabsConfig) {
+                    tabs[id] = plus.webview.create(tabsConfig[id].url, id, tabsConfig[id].styles);
+                    if (tabsConfig[id]['default']) {
+                        self.append(tabs[id]);
+                        current = id;
+                    }
+                }
+                mui('#bar').on('tap', 'a', function(e) {
+                    if (current == this.dataset.id) {
+                        return;
+                    }
+                    tabs[this.dataset.id].show();
+                    tabs[current].hide();
+                    current = this.dataset.id;
+                });
+      	});
+    </script>
+</body>
+</html>

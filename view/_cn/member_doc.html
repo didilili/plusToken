@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>会员协议</title>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../css/common.css" rel="stylesheet"/>
+	<link href="../../css/css/member_doc.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">会员协议</h1>
+	</header>
+	di
+	<div class="mui-content" style="background-color: #FFFFFF;">
+		<div class="login_photo">
+			<img src="../../images/logo.png">
+		</div>
+		<div style="margin: 5% 0"></div>
+		<div>
+			<textarea readonly="readonly" name="doc" id="doc" class="textarea">快速响应是mobile App实现的重中之重，研究表明，当延迟超过100毫秒，用户就能感受到界面的卡顿，然而手机浏览器的click点击存在300毫秒延迟（至于为何会延迟，及300毫秒的来龙去脉，请自行谷百），mui为了解决这个问题，封装了tap事件，因此在任何点击的时候，请忘记click及onclick操作，统统使用如下代码：
+element.addEventListener('tap',function(){
+    //点击响应逻辑
+});
+常见错误
+Uncaught ReferenceError: plus is not defined
+在app开发中，若要使用HTML5+扩展api，必须等plusready事件发生后才能正常使用，否则可能会报“plus is not defined”的错误；
+mui为简化开发，将plusReady事件封装成了mui.plusReady()方法，凡涉及到HTML5+的api，建议都写在mui.plusReady方法中；
+			</textarea>
+			
+			<div class="mui-input-row mui-checkbox mui-left" style="margin: 20px 0;">
+			  <label>我已阅读完plusToken用户协议并同意</label>
+			  <input name="doc_checkbox" id="doc_checkbox" onclick="this.value= this.value==1 ? 0:1" value="0" type="checkbox">
+			</div>
+			<div >
+				<button id="next" type="button" class="mui-btn mui-btn-block mui-btn-primary">下一步</button>
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript" charset="utf-8" src="../../js/mui.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../js/script/_cn/member_doc.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</body>
+</html>

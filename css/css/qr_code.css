@@ -1,0 +1,30 @@
+body{
+	background: #efeff4;
+	color: #222222;
+}
+
+.my-head{
+	text-align: center;
+	padding: 20px;
+}
+
+.my-span{
+	display: block;
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+.my-head img{
+	width: 90%;
+	height: 80%;
+	border: 15px solid #ffffff;
+}
+
+.login_but{
+	padding: 20px;
+}
+
+.two{
+	background: #fff;
+    color: #3b579d;
+}

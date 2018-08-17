@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>forgetPassword</title>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/css/login.css" />
+    <link rel="stylesheet" href="../../css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../js/plugin/picker/css/mui.picker.min.css"/>
+    <style>
+		body{
+			font-size: 15px;
+			color: #979797;
+			font-family: "微软雅黑";
+			background-color: #fff;
+		}
+		.mui-btn-primary,
+		.mui-btn-blue-a-a {
+			color: #fff;
+			border: 1px solid #3b579d;
+			background-color: #3b579d;
+			margin-left: 5%;
+			width: 90%;
+    		height: 44px;
+		}
+		.two {
+			border: solid 1px #3b579d; 
+			background-color: #fff;
+			color: #3b579d;
+		}
+		
+		.login_content label {
+			font-size: 16px;
+			color: #000000;
+		}
+		
+		.mui-input-row label~input {
+			font-size: 15px;
+			color: #979797;
+		}
+		
+		.mui-input-row label~input,
+		.mui-input-row label~select,
+		.mui-input-row label~textarea {
+			float: left;
+			width: 52%;
+			margin-bottom: 0;
+			padding-left: 0;
+			border: 0;
+		}
+		.mui-input-group .mui-input-row:after {
+   
+	    left: 15px;
+	   
+	   
+	    right: 15px;
+	}
+	.mui-input-row .mui-input-clear~.mui-icon-clear, .mui-input-row .mui-input-speech~.mui-icon-speech, .mui-input-row .mui-input-password~.mui-icon-eye {
+	  
+	    right: 7px;
+	  
+	}
+	.spliter{
+		font-size: 13px;
+	    color: #656363;
+	    position: relative;
+	    top: -1px;
+	    left: 2px;
+	}
+	</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">Forgetpassword</h1>
+	</header>
+	<div class="login_content">
+			<div class="mui-content mui-input-group">
+                <form id="login-form">
+					<div class="login_photo">
+						<img src="../../images/logo.png">
+					</div>
+					<div style="margin: 5% 0"></div>
+					<div class="mui-input-row" >
+						<label><span class="mui-icon mui-icon-bars"></span></label>
+							<input class="mui-input-clear mui-input input" 
+								id="pwd_type" name="pwd_type" type="button" data-value="" value="Please select a password type" style="color: #757575; text-align: left;">
+					</div>
+				
+					<div class="mui-input-row">
+						<label><span class="mui-icon iconfont icon-miyue" ></span></label>
+                         <input id="key" name="key" type="password" 
+                         	class="mui-input mui-input-password input" placeholder="Please enter your private key">
+					</div>
+					<p style="margin: 20px 15px;">
+						Please enter your private key to retrieve your password. Forgot your private key will not be retrieved. Please keep your private key in mind and keep it in a safe place.
+					</p>
+                    <div class="login_but">
+						<button id="queding" class="mui-btn mui-btn-block mui-btn-primary" type="button">Submit</button>             	
+                    </div>
+                  
+				</form>
+			</div>
+		</div>
+    
+    <script type="text/javascript" charset="utf-8" src="../../js/mui.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../js/plugin/picker/js/mui.picker.min.en.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+    <!--<script type="text/javascript" charset="utf-8" src="../../js/script/_en/login.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="../../js/script/_en/forget.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</body>
+</html>

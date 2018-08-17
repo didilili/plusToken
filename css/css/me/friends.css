@@ -1,0 +1,16 @@
+input[type=text]{
+	width: 75%;
+}
+
+button{
+	width: 20%;
+	float: right;
+}
+
+.head{
+	margin: 15px;
+}
+
+.my-input{
+	height: 40px;
+}

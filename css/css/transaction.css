@@ -1,0 +1,65 @@
+.mui-tab-item span{
+	color: #FFFFFF;
+}
+
+.my-head{
+	width: 100%;
+	height:80px;
+	background: url(../../images/start.jpg);
+	background-size: cover; 
+	padding: 20px;
+}
+
+.money{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+.money span{
+	display: block;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+.my-while{
+	margin-top: 5px;
+	width: 100%;
+	height: 200px;
+	background: #FFFFFF;;
+}
+
+.mui-table-view-cell{
+	width: 100%;
+}
+
+.type{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.number{
+    float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.sx_money{
+   	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.time{
+	float: left;
+	width: 25%;
+	text-align: center;
+    font-size: 15px;
+}
+
+.my-title {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+}

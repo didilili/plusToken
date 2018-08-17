@@ -1,0 +1,534 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+li{
+	list-style: none;
+}
+
+.qc-p{
+	float: right;
+	margin-top: -10%;
+	z-index: 999;
+}
+
+.pc-p .qc-img{
+	float: right;	
+    width: 80px;
+	height: 80px;
+	border-radius: 0px;
+    border: 0;
+}
+
+.person_content {
+	width: 100%;
+	/*padding-top: 15%;*/
+}
+
+.person_center {
+	width: 100%;
+	height: auto;
+}
+
+.person_center img {
+	width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 6px solid #bdb9b9;
+}
+
+.mui-table-view-cell .person_name {
+	color: #FFFFFF;
+	position: absolute;
+	top: 17%;
+	left: 33%;
+}
+
+.mui-table-view-cell .vip_grade {
+	font-size: 5px;
+	margin-left: 10%;
+}
+
+.mui-table-view-cell .person_phone {
+	font-size: 14px;
+	color: #FFFFFF;
+	position: absolute;
+	left: 33%;
+	top: 51%;
+}
+
+.person_list {
+	width: 100%;
+	height: auto;
+	margin-top: 5%;
+}
+
+.person_list li img {
+	position: relative;
+	width: 20px;
+}
+
+.person_list li span {
+	font-size: 15px;
+	color: #333333;
+	position: absolute;
+	top: 25%;
+	left: 14%;
+}
+
+.t1 {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: 0 0;
+}
+
+.t1 .t3 {
+    position: relative;
+    bottom: auto;
+}
+
+.t1 .t2 {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+}
+
+.my-title{
+	width: 100%;
+	height: 40px;
+    margin-top: 5px;
+}
+.my-table{
+	border: 0;
+	text-align: center
+}
+.my-tr{
+	width: 100%;
+	border: 0;
+}
+.my-td{
+	border: 0;
+    width: 10%;
+    border-bottom: 2px solid #3b579d;
+	border-left: 15px solid #efeff4;
+	border-right: 15px solid #efeff4;
+}
+
+.my-title .my-span {
+	width: 33.3%;
+	height: 100%;
+    color: #3b579d; 
+    border-bottom: 2px solid #3b579d;
+    background: 0 0;
+}
+
+.about_ours {
+	width: 100%;
+	height: auto;
+	/*margin-top: 1%;*/
+}
+
+.about_ours li img {
+	/*position: relative;*/
+	width: 23px;
+	/*top: 10px;*/
+}
+
+/*.about_ours li span {
+	font-size: 15px;
+	color: #333333;
+	position: absolute;
+	top: 35%;
+	left: 14.55555%;
+}*/
+
+.my-line{
+	width: 100%;
+	height: 100%;
+}
+
+.my-line .my-kuai {
+    font-size: 15px;
+    width: 33.9%;
+    float: left;
+}
+
+.bi-name{
+	text-align: left;
+	color: #333333;
+}
+
+.bi-name span{
+	position: relative;
+    top: -5px;
+    left: 3px;
+}
+
+/*.bi-but{
+	position: relative;
+    top: -5px;
+    float: right;
+}*/
+
+.bi-but button {
+	color: #FFFFFF;
+	width: 85px;
+}
+
+.my-span{
+	margin-left: 5px;
+	position: relative;
+    top: 2px;
+}
+
+.bi-price{
+	text-align: center;
+	color: red;
+}
+
+.bi-zd{
+	text-align: center;
+	float: right;
+	border: 1px solid red;
+	border-radius: 3px;
+	background-color: red;
+	color: #FFFFFF;
+	padding: 5% 20%;
+}
+
+.about_ours .bi{
+	width: 25%;
+	height: 50px;
+	float: right;
+}
+
+.about_ours .versions {
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+	float: right;
+}
+
+.log_out {
+	width: 100%;
+	height: auto;
+	margin: 4% auto;
+}
+
+.change_photo {
+	padding: 10% 0 1% 0;
+	width: 100%;
+	text-align: center;
+	background: #FFFFFF;
+}
+
+.change_photo img {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+}
+
+.change_photo p {
+	font-size: 13px;
+	color: #8a8888;
+}
+
+.change_photo input {
+	position: absolute;
+	top: 17%;
+	left: 17%;
+	opacity: 0;
+}
+
+.personal_introduction {
+	width: 100%;
+	height: auto;
+}
+
+.personal_introduction label {
+	font-size: 16px;
+	color: #333333;
+}
+
+.personal_introduction li {
+	font-size: 16px;
+	color: #333333;
+}
+
+.personal_introduction li span {
+	font-size: 15px;
+	color: #333333;
+	float: right;
+}
+
+.personal_introduction input {
+	font-size: 15px;
+	color: #222222;
+}
+
+.password_management {
+	width: 100%;
+	height: auto;
+	/*padding-top: 15%;*/
+}
+
+.password_management .mui-input-row {
+	background: #FFFFFF;
+}
+
+.password_management label {
+	font-size: 16px;
+	color: #333333;
+}
+
+.password_management input {
+	font-size: 15px;
+	color: #333333;
+}
+
+.passed_ts {
+	width: 100%;
+	height: auto;
+	margin: 5% auto;
+	font-size: 15px;
+	color: #756d6d;
+	text-align: center;
+}
+.passed_confirm{
+	width: 100%;
+	height: auto;
+	margin: 5% auto;	
+	text-align: center;
+}
+.change_phone{
+	width: 100%;
+	height: auto;
+	margin: 17% auto;
+}
+.change_phone label{
+	font-size: 16px;
+	color: #333333;
+}
+.change_phone input{
+	font-size: 15px;
+	color: #555555;
+}
+.change_phone .mui-input-row{
+	background: #FFFFFF;
+}
+.mui-table-view-cell .withdrawal_fee{
+	position: absolute;
+    top: 36%;
+    left: 78%;
+}
+.passed_management{
+	/*padding-top: 15%;*/
+}
+.passed_management li{
+	font-size: 15px;
+	color: #333333;
+}
+.deal_password{
+	padding-top: 15%;
+	
+}
+.deal_password label{
+	font-size: 15px;
+	color: #333333;
+}
+.deal_password input{
+	font-size: 13px;
+	color: #333333;
+}
+.deal_password_s{
+	font-size: 13px;
+	color: #555555;
+	padding: 15px;
+}
+.certification_content{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-top: 25%;
+}
+.content_bank{
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	position:absolute;
+	/*top:25%;*/
+	
+}
+.content_bank .mui-input-row {
+	border: 1px solid #DDDDDD;
+	background: #FFFFFF;
+	border-radius: 5px;
+	margin-top: 3%;
+}
+.content_bank .mui-input-row label{
+	font-size: 16px;
+	color:#333333;
+	border-right: 1px solid #DDDDDD;
+	width: 31%;
+	
+}
+.content_bank .mui-input-row input{
+	font-size: 15px;
+	color:#333333;
+	
+}
+.certification_next_content{
+	width: 100%;
+	height: 100%;
+	padding-top: 15%;
+	
+}
+.certification_person{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+	padding: 5px;
+}
+.certification_person p{
+	font-size: 15px;
+	
+}
+.certification_person>li{
+	width: 33.33%;
+	float: left;
+	padding: 5px;
+}
+.certification_person>li img{
+	width: 100%;
+	height: 120px;
+}
+.certification_down{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 5px;
+	text-align: center;
+}
+.certification_down img{
+	width: 50px;
+	
+}
+.certification_photo{
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	overflow: hidden;
+	text-align: center;
+}
+.certification_photo input{
+	width: 19%;
+	height: 100px;
+	position: absolute;
+	opacity: 0;
+}
+.certification_photo>li{
+	float: left;
+	width: 33.33%;
+	border: 1px solid #ece6e6;
+	padding: 10px;
+	
+}
+.certification_photo>li p{
+	font-size: 13px;
+}
+.certification_photo>li img{
+	width: 30px;
+}
+.certification_footer{
+	width: 100%;
+	height: auto;
+	padding: 8px;
+	
+}
+.certification_footer p{
+	font-size: 14px;
+	color: #007AFF;
+}
+.agreement_content{
+	width: 100%;
+	height: 100%;
+	padding-top: 15%;
+	font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #85858c;
+}
+.agreement_content h4{
+	color: #333333;
+}
+.agreement_content_nr{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 10px;
+}
+.rete_content{
+	width: 100%;
+	height: 100%;
+	/*padding-top: 15%;*/
+}
+.rate_zf{
+	width: 100%;
+	height: 2.5rem;
+	padding: 8px;
+	font-size: 17px;
+	color: #333333;
+
+}
+.rate_list{
+	width: 100%;
+	height: auto;
+	padding: 7px;
+	background: #FFFFFF;
+	border-radius: 2px;
+}
+.rate_list p{
+	font-size: 15px;
+	color: #555555;
+	margin-bottom: 2px;
+}
+.rate_list img{
+	width: 25px;
+}
+.rate_list span{
+	font-size: 17px;
+	color: #333333;
+	margin-left: 3%;
+	position: relative;
+	top: -5px;
+}
+
+.my-header{
+	background-image: url(../../images/start.jpg);
+	background-size: cover;	
+	height: 170px;
+}
+
+.my-header-info{
+	    margin: 12% 0;
+}
+
+.my-list{
+	
+}
+
+
+.mui-table-view-cell {
+    position: relative;
+    overflow: hidden;
+    padding: 15px 15px;
+    -webkit-touch-callout: none;
+}
